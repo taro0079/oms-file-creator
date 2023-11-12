@@ -2,12 +2,7 @@ mod command;
 mod processor;
 mod resource;
 mod query;
-use std::{
-    env,
-    fs::{self, File},
-    io::Write,
-    path::Path,
-};
+use std::env;
 
 fn main() -> std::io::Result<()> {
     let args: Vec<String> = env::args().collect();
